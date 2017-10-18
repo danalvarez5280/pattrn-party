@@ -13,11 +13,14 @@ const switchProfile = () => {
   $('#tab3').hasClass('tab-selected') ? $('#profile3').addClass('show') : $('#profile3').removeClass('show');
 
   $('#tab4').hasClass('tab-selected') ? $('#profile4').addClass('show') : $('#profile4').removeClass('show');
-
-  // $('#tab1').hasClass('tab-selected') ? console.log('hi') : console.log('hello');
 };
 
+const redirectToCode = () => {
+  window.open('https://github.com/danalvarez5280/pattrn-party', '_blank');
+}
 
 
+$('.view-code').on('click',() =>
+)
 $('#profile1').toggleClass('show');
 $('.tabs').on('click', switchTab);
