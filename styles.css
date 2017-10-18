@@ -63,6 +63,10 @@ hr {
   color: #34D1D1;
 }
 
+.header-divide {
+  display: none;
+}
+
 .line {
   flex: 9;
   background-color: #D1D2D3;
@@ -75,7 +79,9 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 60vh;
   padding: 0 100px;
+  width: 70vw;
 }
 
 .tabs-area {
@@ -84,7 +90,7 @@ hr {
   border-bottom: none;
   display: flex;
   flex-direction: row;
-  height: 10vh;
+  /*height: 10vh;*/
   padding: 0;
   width: 70vw;
 }
@@ -180,10 +186,31 @@ hr {
 }
 
 @media (max-width: 800px) {
+  header {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+  }
 
   .add {
     display: inline;
+    font-size: 1.2em;
     text-decoration: none;
+  }
+
+  .header-divide {
+    background-color: #F2F2F2;
+    min-height: 2px;
+    display: block;
+    min-width: 100px;
   }
 
   .tab-box {
@@ -198,6 +225,8 @@ hr {
   }
 
   .tabs {
+    border-bottom: 1px solid white;
+    font-size: 1.2em;
     min-height: 60px;
     justify-content: space-between;
     width: 100%;
@@ -218,7 +247,7 @@ hr {
 
   }
 
-  #tab1 {
+  /*#tab1 {
     order: 1;
   }
 
@@ -248,7 +277,7 @@ hr {
 
   #profile4 {
     order: 8;
-  }
+  }*/
 
 
 

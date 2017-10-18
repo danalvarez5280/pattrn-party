@@ -14,15 +14,18 @@ const switchProfile = () => {
 
 const switchTab = (e) => {
   $('.tabs').removeClass('tab-selected');
-  $(e.target).addClass('tab-selected');
+  $(e.currentTarget).addClass('tab-selected');
   $('.profile-area').removeClass('show');
   switchProfile();
+  switchPlusMinus(e);
 };
 
-const switchPlusMinus = () => {
-
+const switchPlusMinus = (e) => {
+  let plusMinusSymbol = e.currentTarget.children[1];
+  $('.add').text('+');
+  plusMinusSymbol.innerText === '+' ?
+  plusMinusSymbol.innerText = '-' : plusMinusSymbol.innerText = '+';
 };
-
 
 $('.view-code').on('click', redirectToCode)
 $('#profile1').toggleClass('show');
