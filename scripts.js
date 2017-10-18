@@ -19,6 +19,10 @@ const switchTab = (e) => {
   switchProfile();
 };
 
+const switchPlusMinus = () => {
+
+};
+
 
 $('.view-code').on('click', redirectToCode)
 $('#profile1').toggleClass('show');

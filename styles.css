@@ -43,12 +43,20 @@ h4, p {
   padding: 0 20px;
 }
 
+hr {
+  margin: 0 20px
+}
+
 .accordion-tabs {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+}
+
+.add {
+  display: none;
 }
 
 .header-span {
@@ -84,6 +92,7 @@ h4, p {
 .tabs {
   align-items: center;
   background-color: #F2F2F2;
+  color: #666666;
   display: flex;
   flex: 1;
   height: 60px;
@@ -93,6 +102,8 @@ h4, p {
 
 .tabs:hover {
   cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 #tab1, #tab2, #tab3 {
@@ -133,6 +144,11 @@ h4, p {
   background-color: white;
   border-right: 1px solid #D1D2D3;
   border-bottom: none;
+  font-weight: 600;
+}
+
+.tab-selected:hover {
+  text-decoration: none;
 }
 
 .text1 {
@@ -153,11 +169,87 @@ h4, p {
   background-color: #2F2235;
   color: #F2F2F2;
   font-weight: 300;
-  margin: 40px;
+  margin: 40px auto;
   padding: 10px 100px;
+  width: 100px;
 }
 
 .view-code:hover {
   cursor: pointer;
   background-color: #3F3244;
+}
+
+@media (max-width: 800px) {
+
+  .add {
+    display: inline;
+    text-decoration: none;
+  }
+
+  .tab-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .tabs-area {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .tabs {
+    min-height: 60px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .tabs:hover {
+    text-decoration: none;
+  }
+
+  .show {
+    display: flex;
+    flex-direction: column;
+  }
+  .photo {
+    min-height: 200px;
+  }
+  .text {
+
+  }
+
+  #tab1 {
+    order: 1;
+  }
+
+  #profile1 {
+    order: 2;
+  }
+
+  #tab2 {
+    order: 3;
+  }
+
+  #profile2 {
+    order: 4;
+  }
+
+  #tab3 {
+    order: 5;
+  }
+
+  #profile3 {
+    order: 6;
+  }
+
+  #tab4 {
+    order: 7;
+  }
+
+  #profile4 {
+    order: 8;
+  }
+
+
+
 }
