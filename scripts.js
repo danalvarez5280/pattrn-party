@@ -1,9 +1,6 @@
-const switchTab = (e) => {
-  $('.tabs').removeClass('tab-selected');
-  $(e.target).addClass('tab-selected');
-  $('.profile-area').removeClass('show');
-  switchProfile();
-};
+const redirectToCode = () => {
+  window.open('https://github.com/danalvarez5280/pattrn-party', '_blank');
+}
 
 const switchProfile = () => {
   $('#tab1').hasClass('tab-selected') ? $('#profile1').addClass('show') : $('#profile1').removeClass('show');
@@ -15,12 +12,14 @@ const switchProfile = () => {
   $('#tab4').hasClass('tab-selected') ? $('#profile4').addClass('show') : $('#profile4').removeClass('show');
 };
 
-const redirectToCode = () => {
-  window.open('https://github.com/danalvarez5280/pattrn-party', '_blank');
-}
+const switchTab = (e) => {
+  $('.tabs').removeClass('tab-selected');
+  $(e.target).addClass('tab-selected');
+  $('.profile-area').removeClass('show');
+  switchProfile();
+};
 
 
-$('.view-code').on('click',() =>
-)
+$('.view-code').on('click', redirectToCode)
 $('#profile1').toggleClass('show');
 $('.tabs').on('click', switchTab);
