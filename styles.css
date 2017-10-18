@@ -113,6 +113,18 @@ h4, p {
   background-image: url('https://vignette.wikia.nocookie.net/en.futurama/images/f/f2/PhilipJ.Fry.png/revision/latest?cb=20110916120042');
 }
 
+.photo2 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/d/d4/Turanga_Leela.png');
+}
+
+.photo3 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png');
+}
+
+.photo4 {
+  background-image: url('https://vignette.wikia.nocookie.net/en.futurama/images/4/4e/Farnsworth.png/revision/latest?cb=20110710094500');
+}
+
 .tab-selected {
   background-color: white;
   border-right: 1px solid #D1D2D3;
