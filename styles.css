@@ -192,6 +192,10 @@ hr {
   background-color: #3F3244;
 }
 
+.view-code2 {
+  margin: 10px auto;
+}
+
 .cards-area {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -357,11 +361,12 @@ hr {
     background-color: #D1D2D3;
     height: 3px;
     margin: 40px 0;
-    width: 200px;
+    width: 100px;
   }
 
   .line2 {
     margin-bottom: 10px;
+    width: 100px;
   }
   .tab-box {
     display: flex;
@@ -435,6 +440,10 @@ hr {
 
   .view-code {
     margin: 25px auto;
+  }
+
+  .view-code2 {
+    margin: 10px auto;
   }
 
 }
