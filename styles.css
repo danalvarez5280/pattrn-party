@@ -67,6 +67,68 @@ hr {
   display: none;
 }
 
+.card {
+  border: 1px solid #D1D2D3;
+  height: 320px;
+  margin: 20px;
+  position: relative;
+}
+
+.cards-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30% 30% 30%;
+  padding: 5%;
+  width: 90%;
+}
+
+.card-photo {
+  background-color: #F2F2F2;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 269px;
+}
+
+.card-title {
+  align-items: center;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #D1D2D3;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 50px;
+  padding-left: 10px;
+}
+
+.card-1 {
+  background-image: url('http://www.behindthevoiceactors.com/_img/shows/banner_2.jpg');
+}
+
+.card-2 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/pt/6/62/Professor_Farnsworth_-_Futurama.png');
+}
+
+.card-3 {
+  background-image: url('http://slurmed.com/fanart/vimp/009_captain-turanga-leela_by-vimp.png');
+}
+
+.card-4 {
+  background-image: url('https://vignette.wikia.nocookie.net/simpsons/images/1/17/Zoidberg.png/revision/latest?cb=20090815013110');
+}
+
+.card-5 {
+  background-image: url('http://www.pngmart.com/files/4/Bender-PNG-File.png');
+}
+
+.card-6 {
+  background-image: url('https://caracaschronicles.files.wordpress.com/2013/11/panic-attack-symptoms.png');
+}
+
+.card-7 {
+  background-image: url('http://www.thenatterbox.com/wp-content/uploads/2016/11/futurama-couverture.png');
+}
+
 .header-span {
   color: #34D1D1;
 }
@@ -75,12 +137,95 @@ hr {
   display: none;
 }
 
+.header {
+  align-items: center;
+  background-color: #D1D2D3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px auto;
+  padding: 10px;
+  width: 85vw;
+}
+
 .line {
   flex: 9;
   background-color: #D1D2D3;
   height: 3px;
   margin-right: 70px;
 }
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  display: none;
+}
+
+.search-bar {
+  background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid #666666;
+  height: 25px;
+  padding: 2px;
+  width: 150px;
+}
+
+.photo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex: 1;
+  margin: 10px;
+  min-width: 30%;
+}
+
+.photo1 {
+  background-image: url('https://vignette.wikia.nocookie.net/en.futurama/images/f/f2/PhilipJ.Fry.png/revision/latest?cb=20110916120042');
+}
+
+.photo2 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/d/d4/Turanga_Leela.png');
+}
+
+.photo3 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png');
+}
+
+.photo4 {
+  background-image: url('https://vignette.wikia.nocookie.net/en.futurama/images/4/4e/Farnsworth.png/revision/latest?cb=20110710094500');
+}
+
+.profile-area {
+  display: none;
+}
+
+.profile-pic {
+  background-image: url('https://vignette.wikia.nocookie.net/en.futurama/images/d/da/Fry_Looking_Squint.jpg/revision/latest/zoom-crop/width/240/height/240?cb=20110701192358');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 180px;
+  height: 50px;
+  width: 50px;
+}
+
+.show {
+  border: 2px solid #D1D2D3;
+  border-top: none;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  order: 5;
+  overflow-y: scroll;
+  padding: 0;
+  width: 100%;
+}
+
 
 .tab-box {
   align-items: center;
@@ -121,80 +266,6 @@ hr {
   text-decoration: underline;
 }
 
-.profile-pic {
-  background-image: url('https://vignette.wikia.nocookie.net/en.futurama/images/d/da/Fry_Looking_Squint.jpg/revision/latest/zoom-crop/width/240/height/240?cb=20110701192358');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 180px;
-  height: 50px;
-  width: 50px;
-}
-
-.header {
-  align-items: center;
-  background-color: #D1D2D3;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 10px auto;
-  padding: 10px;
-  width: 85vw;
-}
-
-.menu {
-  display: none;
-}
-
-.links {
-  display: flex;
-  flex-direction: row;
-}
-
-.search-bar {
-  background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png');
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: 1px solid #666666;
-  height: 25px;
-  padding: 2px;
-  width: 150px;
-}
-
-#tab1, #tab2, #tab3 {
-  border-right: 1px solid white;
-}
-
-.profile-area {
-  display: none;
-}
-
-.photo {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  flex: 1;
-  margin: 10px;
-  min-width: 30%;
-}
-
-.photo1 {
-  background-image: url('https://vignette.wikia.nocookie.net/en.futurama/images/f/f2/PhilipJ.Fry.png/revision/latest?cb=20110916120042');
-}
-
-.photo2 {
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/d/d4/Turanga_Leela.png');
-}
-
-.photo3 {
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png');
-}
-
-.photo4 {
-  background-image: url('https://vignette.wikia.nocookie.net/en.futurama/images/4/4e/Farnsworth.png/revision/latest?cb=20110710094500');
-}
-
 .tab-selected {
   background-color: white;
   border-bottom: none;
@@ -208,18 +279,6 @@ hr {
 .text1 {
   flex: 2;
   margin: 10px;
-}
-
-.show {
-  border: 2px solid #D1D2D3;
-  border-top: none;
-  display: flex;
-  flex-direction: row;
-  height: 400px;
-  order: 5;
-  overflow-y: scroll;
-  padding: 0;
-  width: 100%;
 }
 
 .view-code {
@@ -244,67 +303,6 @@ hr {
   margin: 50px auto;
 }
 
-.cards-area {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 30% 30% 30%;
-  padding: 5%;
-  width: 90%;
-}
-
-.card-title {
-  align-items: center;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #D1D2D3;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: 600;
-  height: 50px;
-  padding-left: 10px;
-}
-
-.card {
-  border: 1px solid #D1D2D3;
-  height: 320px;
-  margin: 20px;
-  position: relative;
-}
-
-.card-photo {
-  background-color: #F2F2F2;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 269px;
-}
-
-.card-1 {
-  background-image: url('http://www.behindthevoiceactors.com/_img/shows/banner_2.jpg');
-}
-
-.card-2 {
-  background-image: url('https://upload.wikimedia.org/wikipedia/pt/6/62/Professor_Farnsworth_-_Futurama.png');
-}
-
-.card-3 {
-  background-image: url('http://slurmed.com/fanart/vimp/009_captain-turanga-leela_by-vimp.png');
-}
-
-.card-4 {
-  background-image: url('https://vignette.wikia.nocookie.net/simpsons/images/1/17/Zoidberg.png/revision/latest?cb=20090815013110');
-}
-
-.card-5 {
-  background-image: url('http://www.pngmart.com/files/4/Bender-PNG-File.png');
-}
-
-.card-6 {
-  background-image: url('https://caracaschronicles.files.wordpress.com/2013/11/panic-attack-symptoms.png');
-}
-
-.card-7 {
-  background-image: url('http://www.thenatterbox.com/wp-content/uploads/2016/11/futurama-couverture.png');
-}
 
 #card-1 {
   grid-column: 1 / span 2;
@@ -339,29 +337,12 @@ hr {
   grid-column: 2 / span 3;
   grid-row: 3;
 }
+
+#tab1, #tab2, #tab3 {
+  border-right: 1px solid white;
+}
+
 @media (max-width: 800px) {
-
-  .card-1 {
-    background-image: url('http://www.behindthevoiceactors.com/_img/shows/banner_2.jpg');
-  }
-
-  .cards-area {
-    align-items: center;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 0;
-  }
-
-  .card {
-    background-position: center;
-    width: 70%;
-  }
-
-  .card-title {
-    font-size: 1em;
-  }
 
   header {
     align-items: center;
@@ -389,14 +370,35 @@ hr {
     margin: 20px 0;
   }
 
-  .flex-cards {
-    margin: 100px 0 0;
-  }
-
-
   .add {
     display: inline;
     text-decoration: none;
+  }
+
+  .card-1 {
+    background-image: url('http://www.behindthevoiceactors.com/_img/shows/banner_2.jpg');
+  }
+
+  .cards-area {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .card {
+    background-position: center;
+    width: 70%;
+  }
+
+  .card-title {
+    font-size: 1em;
+  }
+
+  .flex-cards {
+    margin: 100px 0 0;
   }
 
   .header {
@@ -406,31 +408,12 @@ hr {
     padding: 0 10px 10px;
   }
 
-  .links {
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-  }
-
   .header-display {
     background-color: #D1D2D3;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
-    width: 100%;
-  }
-
-  .menu {
-    color: #666666;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: right;
-    min-width: 25px;
-  }
-
-  .search-bar {
     width: 100%;
   }
 
@@ -452,16 +435,40 @@ hr {
     margin-bottom: 10px;
     width: 100px;
   }
+
+  .links {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu {
+    color: #666666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    min-width: 25px;
+  }
+
+  .photo {
+    min-height: 200px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .show {
+    display: flex;
+    flex-direction: column;
+  }
+
   .tab-box {
     display: flex;
     flex-direction: column;
     position: relative;
     margin: 0 auto;
-  }
-
-  .tabs-area {
-    height: auto;
-    flex-direction: column;
   }
 
   .tabs {
@@ -470,56 +477,17 @@ hr {
     width: 100%;
   }
 
+  .tabs-area {
+    height: auto;
+    flex-direction: column;
+  }
+
   .tabs:hover {
     text-decoration: none;
   }
 
   .tab-selected {
     border: 2px solid #D1D2D3;
-  }
-
-  .show {
-    display: flex;
-    flex-direction: column;
-  }
-  .photo {
-    min-height: 200px;
-  }
-
-  #tab1 {
-    border: 2px solid #D1D2D3;
-    order: 1;
-  }
-
-  #profile1 {
-    order: 2;
-  }
-
-  #tab2 {
-    border: 2px solid #D1D2D3;
-    order: 3;
-  }
-
-  #profile2 {
-    order: 4;
-  }
-
-  #tab3 {
-    border: 2px solid #D1D2D3;
-    order: 5;
-  }
-
-  #profile3 {
-    order: 6;
-  }
-
-  #tab4 {
-    border: 2px solid #D1D2D3;
-    order: 7;
-  }
-
-  #profile4 {
-    order: 8;
   }
 
   .view-code {
@@ -534,6 +502,42 @@ hr {
     display: flex;
     justify-content: center;
     /*text-align: center;*/
+  }
+
+  #profile1 {
+    order: 2;
+  }
+
+  #profile2 {
+    order: 4;
+  }
+
+  #profile3 {
+    order: 6;
+  }
+
+  #profile4 {
+    order: 8;
+  }
+
+  #tab1 {
+    border: 2px solid #D1D2D3;
+    order: 1;
+  }
+
+  #tab2 {
+    border: 2px solid #D1D2D3;
+    order: 3;
+  }
+
+  #tab3 {
+    border: 2px solid #D1D2D3;
+    order: 5;
+  }
+
+  #tab4 {
+    border: 2px solid #D1D2D3;
+    order: 7;
   }
 
 }
