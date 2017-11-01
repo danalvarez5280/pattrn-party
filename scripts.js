@@ -27,6 +27,11 @@ const switchPlusMinus = (e) => {
   plusMinusSymbol.innerText = '-' : plusMinusSymbol.innerText = '+';
 };
 
+const showLinks = () => {
+  $('.link-area').toggleClass('links-hide')
+}
+
+$('.header-display').on('click', showLinks)
 $('.view-code').on('click', redirectToCode)
 $('#profile1').toggleClass('show');
 $('.tabs').on('click', switchTab);
