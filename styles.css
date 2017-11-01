@@ -1,8 +1,12 @@
-html {
-  width: 100%;
+a {
+  color: #666666;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
+
 body {
+  box-sizing: 'border-box';
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
   margin: 0;
@@ -117,6 +121,47 @@ hr {
   text-decoration: underline;
 }
 
+.profile-pic {
+  background-image: url('https://vignette.wikia.nocookie.net/en.futurama/images/d/da/Fry_Looking_Squint.jpg/revision/latest/zoom-crop/width/240/height/240?cb=20110701192358');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 180px;
+  height: 50px;
+  width: 50px;
+}
+
+.header {
+  align-items: center;
+  background-color: #D1D2D3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px auto;
+  padding: 10px;
+  width: 85vw;
+}
+
+.menu {
+  display: none;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-bar {
+  background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid #666666;
+  height: 25px;
+  padding: 2px;
+  width: 150px;
+}
+
 #tab1, #tab2, #tab3 {
   border-right: 1px solid white;
 }
@@ -126,7 +171,6 @@ hr {
 }
 
 .photo {
-  /*background-image: url('https://vignette.wikia.nocookie.net/en.futurama/images/f/f2/PhilipJ.Fry.png/revision/latest?cb=20110916120042');*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -179,9 +223,13 @@ hr {
 }
 
 .view-code {
+  align-items: center;
   background-color: #2F2235;
   color: #F2F2F2;
+  display: flex;
+  flex-direction: row;
   font-weight: 300;
+  justify-content: center;
   margin: 440px auto 40px;
   padding: 10px 100px;
   width: 100px;
@@ -193,7 +241,7 @@ hr {
 }
 
 .view-code2 {
-  margin: 10px auto;
+  margin: 50px auto;
 }
 
 .cards-area {
@@ -333,6 +381,7 @@ hr {
 
   h3 {
     margin: 0;
+    text-align: center;
   }
 
   .accordion-tabs {
@@ -341,13 +390,48 @@ hr {
   }
 
   .flex-cards {
-    margin: 20px 0 0;
+    margin: 100px 0 0;
   }
 
 
   .add {
     display: inline;
     text-decoration: none;
+  }
+
+  .header {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 10px;
+  }
+
+  .links {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-display {
+    background-color: #D1D2D3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .menu {
+    color: #666666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    min-width: 25px;
+  }
+
+  .search-bar {
+    width: 100%;
   }
 
   .header-line {
@@ -440,10 +524,16 @@ hr {
 
   .view-code {
     margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    /*text-align: center;*/
   }
 
   .view-code2 {
     margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    /*text-align: center;*/
   }
 
 }
