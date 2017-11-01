@@ -18,8 +18,11 @@ This idea of having a small library of page components is outlined in Brad Frost
 ####BUILT WITH
 
 [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+
 [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
+
 [JAVASCRIPT](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 [JQUERY](https://developer.mozilla.org/en-US/docs/Glossary/jQuery)
 
 ####CONTRIBUTORS
